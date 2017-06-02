@@ -1,0 +1,19 @@
+C:\DO Assignment\ADV_WebService_V001\ADV_WebService_V001\bin\ADV_WebService_V001.dll
+C:\DO Assignment\ADV_WebService_V001\ADV_WebService_V001\bin\ADV_WebService_V001.pdb
+C:\DO Assignment\ADV_WebService_V001\ADV_WebService_V001\bin\ADV_BLL_V001.dll
+C:\DO Assignment\ADV_WebService_V001\ADV_WebService_V001\bin\ADV_BLL_V001.pdb
+C:\DO Assignment\ADV_WebService_V001\ADV_WebService_V001\obj\Release\ResolveAssemblyReference.cache
+C:\DO Assignment\ADV_WebService_V001\ADV_WebService_V001\obj\Release\Interop.SAPbobsCOM.dll
+C:\DO Assignment\ADV_WebService_V001\ADV_WebService_V001\obj\Release\ADV_WebService_V001.csproj.ResolveComReference.cache
+C:\DO Assignment\ADV_WebService_V001\ADV_WebService_V001\obj\Release\ADV_WebService_V001.dll
+C:\DO Assignment\ADV_WebService_V001\ADV_WebService_V001\obj\Release\ADV_WebService_V001.pdb
+E:\VIVEK\ADV_WebService_V001\ADV_WebService_V001\bin\ADV_WebService_V001.dll
+E:\VIVEK\ADV_WebService_V001\ADV_WebService_V001\bin\ADV_WebService_V001.pdb
+E:\VIVEK\ADV_WebService_V001\ADV_WebService_V001\bin\ADV_BLL_V001.dll
+E:\VIVEK\ADV_WebService_V001\ADV_WebService_V001\bin\log4net.dll
+E:\VIVEK\ADV_WebService_V001\ADV_WebService_V001\bin\ADV_BLL_V001.pdb
+E:\VIVEK\ADV_WebService_V001\ADV_WebService_V001\obj\Release\ADV_WebService_V001.csprojResolveAssemblyReference.cache
+E:\VIVEK\ADV_WebService_V001\ADV_WebService_V001\obj\Release\Interop.SAPbobsCOM.dll
+E:\VIVEK\ADV_WebService_V001\ADV_WebService_V001\obj\Release\ADV_WebService_V001.csproj.ResolveComReference.cache
+E:\VIVEK\ADV_WebService_V001\ADV_WebService_V001\obj\Release\ADV_WebService_V001.dll
+E:\VIVEK\ADV_WebService_V001\ADV_WebService_V001\obj\Release\ADV_WebService_V001.pdb

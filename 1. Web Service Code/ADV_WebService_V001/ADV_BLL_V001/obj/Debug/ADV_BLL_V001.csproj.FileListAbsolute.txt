@@ -1,0 +1,7 @@
+E:\VIVEK\ADV\ADV_WebService_V001\ADV_BLL_V001\bin\Debug\ADV_BLL_V001.dll
+E:\VIVEK\ADV\ADV_WebService_V001\ADV_BLL_V001\bin\Debug\ADV_BLL_V001.pdb
+E:\VIVEK\ADV\ADV_WebService_V001\ADV_BLL_V001\obj\Debug\ADV_BLL_V001.dll
+E:\VIVEK\ADV\ADV_WebService_V001\ADV_BLL_V001\obj\Debug\ADV_BLL_V001.pdb
+E:\VIVEK\ADV\ADV_WebService_V001\ADV_BLL_V001\obj\Debug\ADV_BLL_V001.csprojResolveAssemblyReference.cache
+E:\VIVEK\ADV\ADV_WebService_V001\ADV_BLL_V001\obj\Debug\Interop.SAPbobsCOM.dll
+E:\VIVEK\ADV\ADV_WebService_V001\ADV_BLL_V001\obj\Debug\ADV_BLL_V001.csproj.ResolveComReference.cache

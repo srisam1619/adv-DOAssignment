@@ -1,0 +1,13 @@
+
+
+[class^='icon-spin-']:before,
+[class*=' icon-spin-']:before {
+    font-family: 'spinnericon';
+}
+
+.icon-spin-1:before { content: '\e80b'; }
+.icon-spin-2:before { content: '\e80a'; }
+.icon-spin-3:before { content: '\e809'; }
+.icon-spin-4:before { content: '\e808'; }
+.icon-spin-5:before { content: '\e807'; }
+.icon-spin-6:before { content: '\e806'; }

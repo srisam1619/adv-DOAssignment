@@ -1,0 +1,363 @@
+<!DOCTYPE html> 
+<html  lang="en">
+<head>
+
+    <style>
+      .loaderss
+	{
+	position:absolute;
+	left:47%;
+	top:0px;
+	padding:10px;
+	background:#FFCC00;
+	color:#333333;
+	    z-index: 100000;
+	-webkit-border-bottom-right-radius: 5px;
+-webkit-border-bottom-left-radius: 5px;
+-moz-border-radius-bottomright: 5px;
+-moz-border-radius-bottomleft: 5px;
+border-bottom-right-radius: 5px;
+border-bottom-left-radius: 5px;
+	}
+    </style>
+
+
+    <meta charset="UTF-8">
+<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+<title> Forms elements </title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!-- Favicons -->
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="assets-minified/admin-all-demo.css">
+
+    <!-- JS Core -->
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+
+
+
+    <script type="text/javascript">
+        $(window).load(function(){
+            setTimeout(function() {
+                $('#loading').fadeOut( 400, "linear" );
+            }, 300);
+        });
+    </script>
+
+
+    <script src="assets/js/libs/angular.js"></script>
+      <script src="assets/js/libs/angular-route.js"></script>
+     <script src="assets/js/libs/angular-ui-router.js"></script>
+    <script src="assets/js/libs/ocLazyLoad.js"></script>
+    <script src="assets/js/libs/ui-bootstrap.js"></script>
+    <script src="assets/js/libs/ui-bootstrap-tpls-0.9.0.js"></script>
+    <script src="assets/js/libs/angular-cookies.js"></script>
+
+
+
+
+
+<!-- angular js -->
+
+<script src="assets/js/modernizr.custom.js"></script>
+    <script src="assets/js/config/app.js"></script>
+    <script src="assets/js/services/util_factory.js" ></script>
+	<script src="assets/js/ctrl/listbyday_ctrl.js" ></script>
+<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+
+
+ 
+  
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+  
+  
+</head>
+
+
+    <body ng-class="bodyclass" ng-app="myApp" ng-controller="listbyday_ctrl" ng-init="bodyclass=''">
+	<div class="loaderss" data-loadingss id="loadingss"><i class="fa fa-refresh fa-spin fa-fw"></i> Loading...</div>
+    <div id="sb-site">
+    <div class="sb-slidebar bg-black sb-left sb-style-overlay">
+    
+</div>
+
+<div class="sb-slidebar bg-black sb-right sb-style-overlay">
+<div class="scrollable-content scrollable-slim-sidebar">
+
+</div>
+</div>
+    <div id="loadingedseoad">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+
+    <div id="page-wrapper">
+        <div id="page-header" class="bg-gradient-9">
+    <div id="mobile-navigation">
+        <button id="nav-toggle" class="collapsed" data-toggle="collapse" data-target="#page-sidebar"><span></span></button>
+        <a href="demo/admin-template/index.html" class="logo-content-small" title="UI"></a>
+    </div>
+    <div id="header-logo" class="logo-bg">
+        <a href="" ng-click="closemenu();" class="logo-content-big" title="UI">
+           Name
+           
+        </a>
+        <a href="" ng-click="closemenu();" class="logo-content-small" title="UI">
+            
+            Name
+        </a>
+        <a id="close-sidebar" href="#" title="Close sidebar" ng-click="closemenu();">
+            <i class="glyph-icon icon-angle-left"></i>
+        </a>
+    </div>
+    <!-- #header-nav-left -->
+
+    <div id="header-nav-right">
+        
+        
+    
+        <div style="float:left; font-size:14px;color:#FFFFFF;line-height:45px; font-family:Verdana, Arial, Helvetica, sans-serif;">Welcome <span style="font-weight:bold">{{user[0].UserName}} </span></div>
+        
+        <div class="dropdown" id="dashnav-btn">
+            <a href="#"  id="fullscreen-btn" class="popover-button-header tooltip-button" data-placement="bottom" title="Full Screen">
+                <i class="glyph-icon icon-arrows-alt"></i>
+            </a>
+            
+        </div>
+        <a  id="logout-btn" href="login.html"  class="popover-button-header header-btn tooltip-button" data-placement="bottom"  title="Logout">
+            <i class="glyph-icon icon-linecons-lock"></i>
+        </a>
+
+    </div><!-- #header-nav-right -->
+
+</div>
+        <div id="page-sidebar">
+    <div class="scroll-sidebar">
+        
+
+    <ul id="sidebar-menu">
+    <li class="header"><span>Overview</span></li>
+    <li>
+        <a href="#" title="Admin Dashboard">
+            <i class="glyph-icon icon-linecons-tv"></i>
+            <span>Admin dashboard</span>
+        </a>
+    </li>
+    <li class="divider"></li>
+    <li class="no-menu">
+        <a href="Postal_Zone.html" title="Frontend template">
+            <i class="glyph-icon icon-linecons-beaker"></i>
+            <span>Postal Zone Master</span>
+            
+        </a>
+    </li>
+	<li class="divider"></li>
+    <li class="no-menu">
+        <a href="listbyday.html" title="Frontend template">
+            <i class="glyph-icon icon-linecons-beaker"></i>
+            <span>Driver List by Day</span>
+            
+        </a>
+    </li>
+	<li class="divider"></li>
+    <li class="no-menu">
+        <a href="DoAssignment.html" title="Frontend template">
+            <i class="glyph-icon icon-linecons-beaker"></i>
+            <span>DO Assignment</span>
+            
+        </a>
+    </li>
+	<li class="divider"></li>
+    <li class="no-menu">
+        <a href="DoandCollection.html" title="Frontend template">
+            <i class="glyph-icon icon-linecons-beaker"></i>
+            <span>DO &amp; Collection</span>
+            
+        </a>
+    </li>
+    </ul><!-- #sidebar-menu -->
+
+
+    </div>
+</div>
+        <div id="page-content-wrapper">
+            <div id="page-content">
+                
+                    <div class="container">
+
+<div id="page-title">
+    <h2>Driver List by Day</h2>
+   <!-- <p>Set Default Driver </p>-->
+    
+</div>
+
+<div class="panel">
+    <div class="panel-body">
+        <h3 class="title-hero">
+            Drivers Day by Day Postal Zone        </h3>
+        <div class="example-box-wrapper">
+            <div class="row">
+              <!-- <div class="form-group">
+                    <label class="col-sm-3 control-label">Replace Driver Name Original:</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="" placeholder="Example placeholder...">
+                    </div>
+					
+                </div>
+				  <div class="form-group">
+                   
+					
+					 <label class="col-sm-3 control-label">To Replace Driver Name New:</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="" placeholder="Example placeholder...">
+                    </div>
+                </div>-->
+                <div class="form-body">
+			                  <div class="col-lg-10" align="center">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-4 control-label">
+                           Date:
+                        </label>
+                        <div class="col-sm-6">
+                            <input type="text" class="datepickerddd form-control" id="mydate" ng-model='date' />
+                          
+                        </div>
+						   <div class="col-sm-2">
+                            <button type="button" class="btn-primary btn " ng-click="getteammaster();" >Search</button>
+                          
+                        </div>
+						
+                    </div>
+					
+					
+					<div class="form-group">
+                        <label for="inputEmail3" class="col-sm-4 control-label">
+                           Replace Driver Name Original:
+                        </label>
+                        <div class="col-sm-8">
+                            <select class="form-control" ng-options="item.DriverId as item.DriverName for item in Drivers track by item.DriverId" ng-model="driver1">
+							</select>
+                          
+                        </div>
+                    </div>
+					
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-4 control-label">
+                            To Replace Driver Name New:
+                        </label>
+                        <div class="col-sm-8">
+                             <select class="form-control" ng-options="item.DriverId as item.DriverName for item in Drivers track by item.DriverId" ng-model="driver2">
+							</select>
+                        </div>
+                    </div>
+					
+					
+                    <div class="row" align="center">
+                        <span>
+                            <button class="btn btn-success" ng-click="update();"  ng-disabled="!updatebtn">
+                               Replace Driver</button></span></div>
+					
+                   
+                       
+                    
+                    
+                </div>
+				
+				
+				
+</div>
+
+              </div>
+			  <div class="row" align="right" style="margin-right:10px;"> <button type="button" class="btn btn-info" ng-show="savebtn" ng-click="save();" ><i class="fa fa-floppy-o">
+                                            </i> Save Driver List</button>   <button type="button" class="btn btn-info" ng-show="bulkupdatebtn" ng-click="bulkupdate();" ><i class="fa fa-floppy-o">
+                                            </i> Update Driver List</button></div>
+            <div class="row" style="padding-top:15px">
+			
+              <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            #                                        </th>
+                                        <th>
+                                            Team Name</th>
+                                        <th>
+                                          Description                                      </th>
+                                        <th>
+                                          Default Driver                                  </th>
+                                        
+                                        
+                                        <th>  <span class="btn btn-primary btn-sm" ng-click="search=!search;"><i class="fa fa-search">
+                                            </i> </span>  </th>
+                                    </tr>
+									<tr ng-show="search" >
+                                        <th scope="row"><input type="text" class="form-control" ng-model="searchtext.TeamId"/></th>
+                                        <td><input type="text" class="form-control" ng-model="searchtext.TeamName"/></td>
+                                        <td><input type="text" class="form-control" ng-model="searchtext.Description"/></td>                                        <td colspan="2">      
+                                       
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr ng-repeat="d in TeamMaster | filter:searchtext track by d.TeamId">
+                                        <th scope="row">{{d.TeamId}}</th>
+                                        <td>{{d.TeamName}}</td>
+                                        <td>{{d.Description}}</td>                                        <td colspan="2">  <span ng-show="savebtn">        <select class="form-control" ng-model="d.DefaultDriverId">
+										
+										<option data-ng-repeat="c in Drivers" value="{{c.DriverId}}"  ng-selected="d.DefaultDriverId==c.DriverId">{{c.DriverName}}</option>
+										
+										
+										
+							</select></span>
+						<span ng-show="bulkupdatebtn"> 	
+							<select class="form-control" ng-model="d.NewDriverId">
+										
+										<option data-ng-repeat="c in Drivers" value="{{c.DriverId}}"  ng-selected="d.DefaultDriverId==c.DriverId">{{c.DriverName}}</option>
+										
+										
+										
+							</select></span>
+                                       
+                                    </tr>
+                                </tbody>
+                  </table>
+							<div class="row" align="right" style="margin-right:10px;"> <button type="button" class="btn btn-info" ng-show="savebtn" ng-click="save();" ><i class="fa fa-floppy-o">
+                                            </i> Save Driver List</button>   <button type="button" class="btn btn-info" ng-show="bulkupdatebtn" ng-click="bulkupdate();" ><i class="fa fa-floppy-o">
+                                            </i> Update Driver List</button></div>
+         </div></div>
+    </div>
+</div>
+
+
+                    </div>
+
+                
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JS Demo -->
+<script type="text/javascript" src="assets-minified/admin-all-demo.js"></script>
+
+ <script>
+    $( function() {
+    $( ".datepickerddd" ).datepicker({ dateFormat: 'yy-mm-dd'});
+  } );
+  
+
+
+  </script>
+
+
+</div>
+</body>
+</html>

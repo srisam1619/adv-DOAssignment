@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADV_WebService_V001", "ADV_WebService_V001\ADV_WebService_V001.csproj", "{EB21FAAE-3926-4AD6-9502-3B2C34BBBDCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADV_BLL_V001", "ADV_BLL_V001\ADV_BLL_V001.csproj", "{D4A19E23-CBCF-4964-AF02-C090949B9799}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB21FAAE-3926-4AD6-9502-3B2C34BBBDCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB21FAAE-3926-4AD6-9502-3B2C34BBBDCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB21FAAE-3926-4AD6-9502-3B2C34BBBDCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB21FAAE-3926-4AD6-9502-3B2C34BBBDCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4A19E23-CBCF-4964-AF02-C090949B9799}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4A19E23-CBCF-4964-AF02-C090949B9799}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4A19E23-CBCF-4964-AF02-C090949B9799}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4A19E23-CBCF-4964-AF02-C090949B9799}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

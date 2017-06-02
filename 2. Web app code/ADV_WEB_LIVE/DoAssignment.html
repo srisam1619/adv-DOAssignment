@@ -1,0 +1,539 @@
+<!DOCTYPE html> 
+<html  lang="en">
+<head>
+
+    <style>
+.orange
+	{
+		background:#e68b2a;
+	}
+	.Green
+	{
+		background:#2ecc71;
+	}
+	.blue
+	{
+		background:#090854;
+		color:#FFFFFF;
+	}
+	.default
+	{
+		background:#f9fafe;
+	}
+      .loaderss
+	{
+	position:fixed;
+	left:47%;
+	top:40px;
+	padding:10px;
+	background:#FFCC00;
+	color:#333333;
+	    z-index: 100000;
+	-webkit-border-bottom-right-radius: 5px;
+-webkit-border-bottom-left-radius: 5px;
+-moz-border-radius-bottomright: 5px;
+-moz-border-radius-bottomleft: 5px;
+border-bottom-right-radius: 5px;
+border-bottom-left-radius: 5px;
+	}
+	
+	.fixed {
+    position: fixed;
+    top: 0;
+	left:15px;
+	right:15px;
+	background:#FFFFFF;
+}
+.searchbar{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.upfixed
+{
+	position:fixed;
+	bottom:10px;
+	right:10px;
+	z-index:+10000;
+}
+.upfixedHide
+{
+	display:none;
+}
+.upfixedShow
+{
+	display:block;
+}
+
+
+
+
+    </style>
+
+
+    <meta charset="UTF-8">
+<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+<title> Forms elements </title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!-- Favicons -->
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="assets-minified/admin-all-demo.css">
+
+    <!-- JS Core -->
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+
+
+
+    <script type="text/javascript">
+        $(window).load(function(){
+            setTimeout(function() {
+                $('#loading').fadeOut( 400, "linear" );
+            }, 300);
+        });
+    </script>
+
+
+    <script src="assets/js/libs/angular.js"></script>
+      <script src="assets/js/libs/angular-route.js"></script>
+     <script src="assets/js/libs/angular-ui-router.js"></script>
+    <script src="assets/js/libs/ocLazyLoad.js"></script>
+    <script src="assets/js/libs/ui-bootstrap.js"></script>
+    <script src="assets/js/libs/ui-bootstrap-tpls-0.9.0.js"></script>
+    <script src="assets/js/libs/angular-cookies.js"></script>
+
+
+
+
+
+<!-- angular js -->
+
+<script src="assets/js/modernizr.custom.js"></script>
+    <script src="assets/js/config/app.js"></script>
+    <script src="assets/js/services/util_factory.js" ></script>
+	<script src="assets/js/ctrl/doassignment_ctrl.js" ></script>
+<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+
+
+ 
+  
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+  
+  
+</head>
+
+
+    <body ng-class="bodyclass"  ng-app="myApp" ng-controller="doassignment_ctrl">
+	<div class="loaderss" data-loadingss id="loadingss"><i class="fa fa-refresh fa-spin fa-fw"></i> Loading...</div>
+    <div id="sb-site">
+    <div class="sb-slidebar bg-black sb-left sb-style-overlay">
+    
+</div>
+
+<div class="sb-slidebar bg-black sb-right sb-style-overlay">
+<div class="scrollable-content scrollable-slim-sidebar">
+
+</div>
+</div>
+    <div id="loadingedseoad">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+
+    <div id="page-wrapper">
+        <div id="page-header" class="bg-gradient-9">
+    <div id="mobile-navigation">
+        <button id="nav-toggle" class="collapsed" data-toggle="collapse" data-target="#page-sidebar"><span></span></button>
+        <a href="demo/admin-template/index.html" class="logo-content-small" title="UI"></a>
+    </div>
+    <div id="header-logo" class="logo-bg">
+        <a href="" ng-click="closemenu();" class="logo-content-big" title="UI">
+           Name
+           
+        </a>
+        <a href="" ng-click="closemenu();" class="logo-content-small" title="UI">
+            
+            Name
+        </a>
+        <a id="close-sidebar" href="#" title="Close sidebar" ng-click="closemenu();">
+            <i class="glyph-icon icon-angle-left"></i>
+        </a>
+    </div>
+    <!-- #header-nav-left -->
+
+    <div id="header-nav-right">
+        
+        
+    
+        <div style="float:left; font-size:14px;color:#FFFFFF;line-height:45px; font-family:Verdana, Arial, Helvetica, sans-serif;">Welcome <span style="font-weight:bold">{{user[0].UserName}} </span></div>
+        
+        <div class="dropdown" id="dashnav-btn">
+            <a href="#"  id="fullscreen-btn" class="popover-button-header tooltip-button" data-placement="bottom" title="Full Screen">
+                <i class="glyph-icon icon-arrows-alt"></i>
+            </a>
+            
+        </div>
+        <a  id="logout-btn" href="login.html"  class="popover-button-header header-btn tooltip-button" data-placement="bottom"  title="Logout">
+            <i class="glyph-icon icon-linecons-lock"></i>
+        </a>
+
+    </div>
+	<!-- #header-nav-right -->
+
+</div>
+        <div id="page-sidebar">
+    <div class="scroll-sidebar">
+        
+
+    <ul id="sidebar-menu">
+    <li class="header"><span>Overview</span></li>
+    <li>
+        <a href="#" title="Admin Dashboard">
+            <i class="glyph-icon icon-linecons-tv"></i>
+            <span>Admin dashboard</span>
+        </a>
+    </li>
+    <li class="divider"></li>
+    <li class="no-menu">
+        <a href="Postal_Zone.html" title="Frontend template">
+            <i class="glyph-icon icon-linecons-beaker"></i>
+            <span>Postal Zone Master</span>
+            
+        </a>
+    </li>
+	<li class="divider"></li>
+    <li class="no-menu">
+        <a href="listbyday.html" title="Frontend template">
+            <i class="glyph-icon icon-linecons-beaker"></i>
+            <span>Driver List by Day</span>
+            
+        </a>
+    </li>
+	<li class="divider"></li>
+    <li class="no-menu">
+        <a href="DoAssignment.html" title="Frontend template">
+            <i class="glyph-icon icon-linecons-beaker"></i>
+            <span>DO Assignment</span>
+            
+        </a>
+    </li>
+	<li class="divider"></li>
+    <li class="no-menu">
+        <a href="DoandCollection.html" title="Frontend template">
+            <i class="glyph-icon icon-linecons-beaker"></i>
+            <span>DO &amp; Collection</span>
+            
+        </a>
+    </li>
+    </ul><!-- #sidebar-menu -->
+
+
+    </div>
+</div>
+        <div id="page-content-wrapper">
+            <div id="page-content">
+                
+                    <div class="container">
+
+<div id="page-title">
+    <h2>Delivery Order Program</h2>
+   <!-- <p>Set Default Driver </p>-->
+    
+</div>
+
+<div class="panel">
+    <div class="panel-body">
+        <h3 class="title-hero">
+                  </h3>
+        <div class="example-box-wrapper">
+		
+				
+				
+				 
+           <div class="row searchbar" style="border:dashed 1px #006633; z-index:+10000; padding:15px;" > 
+			  <div class="col-lg-6">
+			  	<div class="col-lg-6"><div class="form-group">
+                        <label for="inputEmail3" class="col-sm-5 control-label">
+                            DO From Date:
+                        </label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control datepickerddd"  ng-model='Fdate'  />
+                        </div>
+                    </div></div>
+				<div class="col-lg-6"><div class="form-group">
+                        <label for="inputEmail3" class="col-sm-5 control-label">
+                            DO To Date:
+                        </label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control datepickerddd"  ng-model='Tdate'  />
+                        </div>
+                    </div></div>
+				
+				<div class="top-buffer"></div>
+				<div class="col-lg-6"><div class="form-group">
+                        <label for="inputEmail3" class="col-sm-5 control-label">
+                            New Driver:
+                        </label>
+                        <div class="col-sm-7">
+                             <select class="form-control" ng-options="item.Driver as item.Driver for item in NewDrivers track by item.Driver" ng-model="driver2">
+							
+							</select>
+                        </div>
+                    </div></div>
+			  <div class="col-lg-6" style="vertical-align:middle;" align="right">
+                            <button type="button" class="btn-sm btn-info btn" ng-click="changedriver();" >Change Driver for all DO below</button>
+                       </div>
+			  </div>
+			  <div class="col-lg-6">
+				  <div class="col-lg-6"><div class="form-group">
+							<label for="inputEmail3" class="col-sm-5 control-label">
+								Status:
+							</label>
+							<div class="col-sm-7">
+								 <select class="form-control" ng-model="statusss">
+								 <option value="New" selected="selected">New</option>
+								 <option value="All">All</option>
+								  <option value="Assigned">Assigned</option>
+								  <option value="Cancelled">Cancelled</option>
+								  <option value="Completed">Completed</option>
+								  </select>
+							</div>
+						</div></div>
+				  <div class="col-lg-6"><div class="form-group">
+							<label for="inputEmail3" class="col-sm-5 control-label">
+								Driver Name:
+							</label>
+							<div class="col-sm-7">
+								  <select class="form-control" ng-options="item.Driver as item.Driver for item in Drivers track by item.Driver" ng-model="driver1">
+								  
+								  <option value="">--Select--</option>
+							</select>
+							</div>
+						</div></div>
+						<div class="top-buffer"></div>
+				  <div class="col-lg-6"><div class="form-group">
+                        <label for="inputEmail3" class="col-sm-5 control-label">
+                          Time of Delivery
+                        </label>
+                        <div class="col-sm-7">
+                            <select ng-model="TimofDelivery" class="form-control" >
+							<option value="ALL">ALL</option>
+							<option value="AM">AM</option>
+							<option value="PM">PM</option></select>
+                        </div>
+                    </div></div>
+					
+					 <div class="col-lg-6"><div class="form-group">
+                       <button type="button" class="btn-info btn" ng-click="searchmaster();">Search</button>
+					   <div class="upfixed upfixedHide">
+					   <button  type="button" ng-click="scroolup();" class="btn btn-info"><i class="fa fa-arrow-up"></i></button></div>
+                       <div class="col-sm-7">
+					    <button type="button" class="btn-success btn" ng-click="updateDO();" ng-disabled="updatebtn" ><i class="fa fa-floppy-o">
+                                            </i> UPDATE</button>
+                           
+                        </div>
+                    </div></div>
+			      
+			  </div>
+			  
+			  </div>
+			  <div class="top-buffer"></div>
+			  
+			  <div class="col-lg-10" align="center">
+                    <table width="100" border="0" cellspacing="5" cellpadding="5" class="table table-bordered">
+					<thead>
+  <tr >
+    <th>Driver Name</th>
+    <th>Number of Unique Postal District</th>
+    <th>Number of Assigned DO</th>
+  </tr>
+  </thead>
+  <tr  ng-repeat="d in masterDrivers">
+    <td>{{d.DriverName}}</td>
+    <td>{{d.PostalZone}}</td>
+    <td>{{d.AssignedDO}}</td>
+  </tr>
+  <tr ng-show="masterDrivers.length">
+    <td></td>
+    <td><strong>Total</strong></td>
+    <td><strong>{{total}}</strong></td>
+  </tr>
+   <tr  ng-show="!masterDrivers.length">
+    <td colspan="3" style="color:#FF0000;" align="center">No Data Found..</td>
+    </tr>
+</table>
+
+                </div>
+			  
+			   <div class="row">
+              <!-- <div class="form-group">
+                    <label class="col-sm-3 control-label">Replace Driver Name Original:</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="" placeholder="Example placeholder...">
+                    </div>
+					
+                </div>
+				  <div class="form-group">
+                   
+					
+					 <label class="col-sm-3 control-label">To Replace Driver Name New:</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="" placeholder="Example placeholder...">
+                    </div>
+                </div>-->
+                <div class="form-body">
+			                  
+				
+				
+</div>
+
+              </div>
+			  
+            <div class="row" style="padding-top:15px">
+			<div class="col-lg-12" style="overflow:auto;" >
+              <table width="100%" border="0" cellspacing="5" align="center" cellpadding="5" class="table-responsive table table-bordered">
+			  <thead>
+  <tr>
+    <th>No.</th>
+    <th>DO Date</th>
+	<th>Created date - Time</th>
+    <th>DO Number</th>
+    <th>Customer Name / Address</th>
+    <th>Service Call ID</th>
+    <th>Remarks</th>
+    <th>Serial No / Model</th>
+    <th>Driver In Charge</th>
+	<th>Time of Delivery</th>
+    <th>Priority</th>
+    <th>Status</th>
+    <th> <button type="button" class="btn-sm btn-info btn" ng-click="showDiv = !showDiv"><i class="fa fa-filter" aria-hidden="true"></i></button> </th>
+  </tr>
+  </thead>
+  <tr ng-show="showDiv">
+    <th></th>
+    <th></th>
+	<th></th>
+    <th></th>
+    <th><input type="text" class="form-control" ng-model="searchtext.CustomerName" />
+	<input type="text" class="form-control" ng-model="searchtext.Address" /></th>
+    <th><input type="text" class="form-control" ng-model="searchtext.ServiceCallID" /></th>
+    <th></th>
+    <th><input type="text" class="form-control" ng-model="searchtext.SerialNo" />
+		<input type="text" class="form-control" ng-model="searchtext.Model" /></th>
+    <th><input type="text" class="form-control" ng-model="searchtext.Driver" /></th>
+	<th></th>
+	<th></th>
+    <th colspan="2"></th>
+  </tr>
+   <tr  ng-show="!DOSdata.length">
+    <td colspan="16" style="color:#FF0000;">No Data Found..</td>
+	</tr>
+  <tbody ng-repeat="d in DOSdata |filter:searchtext">
+  <tr ng-class='whatClassIsIt(d.Status,d.Driver)'>
+    <td>{{$index+1}}</td>
+    <td><span ng-hide="d.Status=='Closed'"><input type="text" class="mydatepicker input-sm form-control" datepicker ng-model="d.DocDate" style="width:90px" /></span><span ng-show="d.Status=='Closed'">{{d.DocDate}}</span></td>
+	<td>{{d.DocDateTime}}</td>
+    <td>{{d.DONumber}}</td>
+    <td>{{d.CustomerName}}<br />{{d.Address}}</td>
+    <td>{{d.ServiceCallID}}</td>
+    <td style="width:20px;word-break:break-all;">{{d.Remarks}}</td>
+    <td>{{d.SerialNo}} / {{d.Model}}</td>
+    <td  style="width:200px;">
+							<select class="form-control" ng-options="o as o for o in NewDrivers_array" ng-model="d.Driver">
+							</select></td>
+							<td><select class="form-control" ng-model="d.TimeofDelivery" style="padding:2px;" >
+							<option value="AM" >AM</option>
+							<option value="PM" >PM</option>
+							</select></td>
+    <td> <span  ng-style="d.Priority === '01_URGENT' ? { 'color':'red' } : { 'width': '' }">{{d.Priority}}</span></td>
+    <td colspan="2">Status: {{d.Status}}<br/>Printed : {{d.Printed=='Y' ? 'Yes' : 'No'}}</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="9" ><table width="300" class="table-responsive table table-bordered" border="0" cellspacing="5" cellpadding="5">
+      <tr>
+        <th>#</th>
+        <th>Item Code</th>
+        <th>Item Name</th>
+        <th>Qty on Hand</th>
+        <th>Delivered Status</th>
+        <th>Remarks</th>
+        <th>Return Note No.</th>
+        <th>Qty</th>
+      </tr>
+      <tr ng-repeat="n in d.ItemsArray">
+        <td>{{$index+1}}</td>
+        <td>{{n.ItemCode}}</td>
+        <td style="word-break:break-all;">{{n.ItemName}}</td>
+        <td>{{n.QOH}}</td>
+        <td style="width:200px"><select class="form-control" ng-model="n.StatusTemp">
+								<option value=""></option>
+								 <option value="Closed" ng-disabled="n.StatusTemp!='Closed' && n.StatusTemp!=''">Closed</option>
+								  <option value="Cancelled-Toner High">Cancelled-Toner High</option>
+								  <option value="Cancelled-unable to locate">Cancelled-unable to locate</option>
+								  <option value="Cancelled-Wrong Model">Cancelled-Wrong Model</option>
+								  <option value="Cancelled-Wrong Part">Cancelled-Wrong Part</option>
+								  <option value="Cancelled-faulty part">Cancelled-faulty part</option>
+								  <option value="Cancelled-Others">Cancelled-Others</option>
+								  <option value="Cancelled-CS">Cancelled-CS</option>
+								  
+								  </select></td>
+        <td><textarea ng-model="n.LineRemarks"></textarea></td>
+        <td>{{n.ReturnNoteNo}}</td>
+        <td>{{n.Quantity}}</td>
+      </tr>
+    </table></td>
+    <td colspan="6" valign="middle"><a href="report.html?id={{d.DONumber}}" target="_blank"><button type="button" class="btn btn-primary btn-small">Preview</button></a> <button type="button" class="btn btn-info btn-small"  ng-click="printdoUDF(d.DONumber);">Print</button></td>
+  </tr>
+  </tbody>
+</table>
+</div>
+							<div class="row" align="right" style="margin-right:10px;">    <!--<button type="button" class="btn btn-primary" ng-disabled="printbtn"   ng-click="bulkupdate();" ><i class="fa fa-floppy-o">
+                                            </i> Print DO & Collection Note</button>--></div>
+         </div></div>
+    </div>
+</div>
+
+
+                    </div>
+
+                
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JS Demo -->
+<script type="text/javascript" src="assets-minified/admin-all-demo.js"></script>
+
+ <script>
+    $( function() {
+    $( ".datepickerddd" ).datepicker({ dateFormat: 'yy-mm-dd'});
+  } );
+  
+   $(function() {
+    $('body').on('focus',".mydatepicker", function(){
+    $(this).datepicker();
+    });
+  }); 
+  
+
+
+  </script>
+
+
+</div>
+</body>
+</html>

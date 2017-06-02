@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\DO Assignment_Publish" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/log4net.dll" publishTime="02/28/2013 22:45:10" />
+    <file relUrl="DOService.asmx" publishTime="07/28/2016 21:49:07" />
+    <file relUrl="Web.config" publishTime="11/07/2016 18:04:53" />
+    <file relUrl="bin/ADV_WebService_V001.pdb" publishTime="12/19/2016 14:24:28" />
+    <file relUrl="bin/ADV_BLL_V001.dll" publishTime="11/16/2016 21:34:35" />
+    <file relUrl="bin/ADV_WebService_V001.dll" publishTime="12/19/2016 14:24:28" />
+    <file relUrl="bin/ADV_BLL_V001.pdb" publishTime="11/16/2016 21:34:35" />
+  </publishProfile>
+</publishData>
